@@ -1,0 +1,403 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-family: Metropolis,sans-serif;
+}
+
+h1{
+	font-family: Metropolis,sans-serif;
+	color: white;
+}
+
+h2{
+	font-family: Metropolis,sans-serif;
+	color: rgba(255,255,255,0.6);
+	font-size: 110%;
+}
+
+img{
+	max-width: 100%
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	font-family: Open Sans,sans-serif;
+    color: #191e1e;
+}
+
+li{
+	padding-bottom: 15px;
+	transition: 0.3s;
+}
+
+li:hover{
+	color: #6DB33F;
+	transition: 0.3s;
+}
+
+/*bloch under header*/
+.under-intro{
+	margin: 0;
+	width: 100%;
+	background-color: #6DB33F;
+	height: 35px;
+}
+
+.welcome-text{
+	color: rgba(255,255,255,0.75);
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	top: 6px;
+	transition: .3s;
+}
+
+.welcome-text:hover{
+	color: rgba(255,255,255,1);
+	transition: .3s;
+}
+ 
+/*styles for header */
+.header{
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-top: 9px;
+	padding-bottom: 9px;
+
+}
+
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header-inner{
+	display: flex;
+	align-items: center;
+}
+
+.main-logo{
+	height: 48px;
+	width: 27%;
+	min-width: 210px;
+}
+
+.icon-adaptive-menu{
+	display: none;
+}
+
+.nav{
+	width: 70%;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-link{
+	font-family: Metropolis,sans-serif;
+	color: rgb(0,0,0);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.nav-link1{
+	font-family: Metropolis,sans-serif;
+	color: rgb(0,0,0);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.nav-link2{
+	font-family: Metropolis,sans-serif;
+	color: rgb(0,0,0);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.nav-link3{
+	font-family: Metropolis,sans-serif;
+	color: rgb(0,0,0);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.hidden-menu1, .hidden-menu2, .hidden-menu3{
+	position: absolute;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: white;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+	padding: 10px 10px 10px 20px;
+	top: 120%;
+	z-index: 3;
+	display: none;
+}
+
+.hidden-menu1{
+	left: 32%;	
+}
+
+.hidden-menu2{
+	left: 44%;
+}
+
+.hidden-menu3{
+	left: 50%;
+}
+
+.nav-link1:hover + .hidden-menu1, .nav-link2:hover + .hidden-menu2, .nav-link3:hover + .hidden-menu3{
+	display: block;
+}
+
+/*styles for first block with information about company*/
+.first-intro{
+	width: 100%;
+}
+
+.first-intro-title{
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.first-intro-about{
+	font-size: 24px;
+	max-width: 1040px;
+	margin-bottom: 80px;
+	line-height: 1.7;
+}
+
+/*second block - main projects*/
+.second-intro{
+	width: 100%;
+	background-color: rgba(235, 242, 242,1);
+}
+
+.container-second{
+	display: flex;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 2px solid black;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.left-step-second-inro{
+	width: 50%;
+}
+
+.container-projects{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.child-projects{
+	background-color: white;
+	width: 40%;
+    padding: 25px 20px 40px 20px;
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.child-projects:hover{
+	box-shadow: 7px 7px 7px  rgba(0, 0, 0, 0.1);
+	transform: translateY(-7px);
+	transition: 0.3s;
+}
+
+.name-project{
+	font-size: 24px;
+	color: #086dc3;
+}
+
+.icons{
+	height: 60px;
+}
+
+/*third block - attic*/
+.third-intro{
+	width: 100%;
+	background-color: rgba(235, 242, 242,1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.container-third{
+	display: block;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.attic-projects{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.container-spec-projects{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.child-spec-projects{
+	max-width: 40%;
+}
+
+/*fourth block*/
+.fourth-intro{
+	width: 100%;
+	background-color: rgba(235, 242, 242,1);
+}
+
+.container-fourth{
+	display: block;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.container-gets{
+	display: flex;
+	justify-content: space-between;
+}
+
+.child-gets{
+	width: 35%;
+}
+
+.get-news{
+	font-size: 24px;
+	font-weight: 550;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+}
+
+.container-footer{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-list{
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+}
+
+.footer-h2{
+	font-weight: 550;
+    font-size: 115%;
+    transition: 0.3s;
+}
+
+.footer-h2:hover{
+	color: #6DB33F;
+	transition: 0.3s;
+}
+
+.container-sumbition{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.email{
+	border: 2px solid black;
+	width: 50%;
+	height: 35px;
+}
+
+.subscribe{
+	border: 2px solid black;
+	width: 40%;
+	height: 41px;
+	background-color: black;
+	color: white;
+}
+
+.child-input-area{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+
+/*for mobile version menu(not use)*/
+.mobile-menu{
+	display: none;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 11;
+	max-width: 100%;
+	overflow-y: scroll;
+}
+
+.container-mobile-menu{
+	max-width: 600px;
+	margin-top: 150px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.item-menu{
+	border-bottom: 1px solid rgba(255,255,255,1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first-mobile-hidden-menu, .second-mobile-hidden-menu, .third-mobile-hidden-menu{
+	display: none;
+	transition: .5s;
+}
+
+.open-hidden-menu1:hover + .first-mobile-hidden-menu{
+	display: block;
+	transition: .5s;
+}
+
+.open-hidden-menu2:hover + .second-mobile-hidden-menu{
+	display: block;
+	transition: .5s;
+}
+
+.open-hidden-menu3:hover + .third-mobile-hidden-menu{
+	display: block;
+	transition: .5s;
+}
+
+.arrow-icon{
+	height: 30px;
+	width: 100%;
+}
