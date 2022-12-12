@@ -5,104 +5,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="adaptive-style.css">
+	<script src="script.js"></script>
 	<title>Spring</title>
 </head>
-<body>
+<body onload="setProjects()">
 	<nav class="mobile-menu">
+		<div class="forCloseMobMenu" onclick="closeMobileMenu()"><h1 style="font-size: 30px;">x</h1></div>
 		<div class="container-mobile-menu">
 			<div class="item-menu">
 				<h1>Why Spring</h1>
 				<div class="open-hidden-menu1">
-					<img class="arrow-icon" src="images/arrow-down.png">
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.first-mobile-hidden-menu')">
 				</div>
 			</div>
 			<div class="first-mobile-hidden-menu">
-				<div>
-					<h2>Overview</h2>
-				</div>
-				<div>
-					<h2>Microservices</h2>
-				</div>
-				<div>
-					<h2>Reactive</h2>
-				</div>
-				<div>
-					<h2>Event Driven</h2>
-				</div>
-				<div>
-					<h2>Cloud</h2>
-				</div>
-				<div>
-					<h2>Web Applications</h2>
-				</div>
-				<div>
-					<h2>Serverless</h2>
-				</div>
-				<div>
-					<h2>Batch</h2>
-				</div>
+				
 			</div>
 			<div class="item-menu">
 				<h1>Learn</h1>
 				<a class="open-hidden-menu2" href="">
-					<img class="arrow-icon" src="images/arrow-down.png">
+					<img class="arrow-icon" onclick="showMobileMenuItems('.second-mobile-hidden-menu')" src="images/arrow-down.png">
 				</a>
 			</div>
 			<div class="second-mobile-hidden-menu">
-				<div>
-					<h2>Overview</h2>
-				</div>
-				<div>
-					<h2>Quickstart</h2>
-				</div>
-				<div>
-					<h2>Guides</h2>
-				</div>
-				<div>
-					<h2>Blog</h2>
-				</div>
+				
 			</div>
 			<div class="item-menu">
 				<h1>Projects</h1>
 				<a class="open-hidden-menu3" href="">
-					<img class="arrow-icon" src="images/arrow-down.png">
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.third-mobile-hidden-menu')">
 				</a>
 			</div>
 			<div class="third-mobile-hidden-menu">
-				<div>
-					<h2>Overview</h2>
-				</div>
-				<div>
-					<h2>Spring Boot</h2>
-				</div>
-				<div>
-					<h2>Spring Framework</h2>
-				</div>
-				<div>
-					<h2>Spring Cloud</h2>
-				</div>
-				<div>
-					<h2>Spring Cloud Data Flow</h2>
-				</div>
-				<div>
-					<h2>Spring Data</h2>
-				</div>
-				<div>
-					<h2>Spring Integration</h2>
-				</div>
-				<div>
-					<h2>Spring Batch</h2>
-				</div>
-				<div>
-					<h2>Spring Security</h2>
-				</div>
+				
 			</div>
+
 			<div class="item-menu">
 				<h1>Training</h1>
 			</div>
+
 			<div class="item-menu">
 				<h1>Support</h1>
 			</div>
+			
 			<div class="item-menu">
 				<h1>Community</h1>
 			</div>
@@ -119,45 +64,15 @@
 
 				<img class="main-logo" src="images/spring-logo.svg">
 
-				<img class="icon-adaptive-menu" src="images/menu.png">
+				<img class="icon-adaptive-menu" src="images/menu.png" onclick="showMobileMenu()">
 
 				<nav class="nav">
-					<a class="nav-link1" href="">Why Spring</a>
-					<div class="hidden-menu1">
-						<ul>
-							<li>Overview</li>
-							<li>Microservices</li>
-							<li>Reactive</li>
-							<li>Event Driven</li>
-							<li>Cloud</li>
-							<li>Web Applications</li>
-							<li>Services</li>
-							<li>Batch</li>
-						</ul>
-					</div>
-					<a class="nav-link2" href="">Learn</a>
-					<div class="hidden-menu2">
-						<ul>
-							<li>Overview</li>
-							<li>Quickstart</li>
-							<li>Giudes</li>
-							<li>Blog</li>
-						</ul>
-					</div>
-					<a class="nav-link3" href="">Projects</a>
-					<div class="hidden-menu3">
-						<ul>
-							<li>Overview</li>
-							<li>Spring Boot</li>
-							<li>Spring Framework</li>
-							<li>Spring Cloud</li>
-							<li>Spring Cloud Data Flow</li>
-							<li>Spring Data</li>
-							<li>Spring Integration</li>
-							<li>Spring Batch</li>
-							<li>Spring Security</li>
-						</ul>
-					</div>
+					<a class="nav-link1" href="" onclick="setMenuItems('.nav-link1')">Why Spring</a>
+					
+					<a class="nav-link2" href="" onclick="setMenuItems('.nav-link2')">Learn</a>
+					
+					<a class="nav-link3" href="" onclick="setMenuItems('.nav-link3')">Projects</a>
+					
 					<a class="nav-link" href="#">Training</a>
 					<a class="nav-link" href="#">Support</a>
 					<a class="nav-link" href="#">Community</a>
@@ -166,7 +81,7 @@
 		</div>
 	</header>
 
-	<div class="first-intro">
+	<div class="first-intro" >
 		<div class="container">
 			<div>
 				<p class="first-intro-title">Projects</p>
@@ -176,81 +91,13 @@
 	</div>
 
 	<div class="second-intro">
+		<div>
+			<input class="search" type="search" placeholder="SEARCH" name="q" onkeyup="searchProjects()">
+		</div>
 		<div class="container-second">		
 			<div class="left-step-second-inro"></div>	
-			<div class="container-projects">
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-boot.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Boot</p>
-						<p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-framework.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Framework</p>
-						<p>Provides core support for dependency injection, transaction management, web apps, data access, messaging, and more.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-data.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Data</p>
-						<p>Provides a consistent approach to data access – relational, non-relational, map-reduce, and beyond.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-cloud.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Cloud</p>
-						<p>Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-data-flow.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Cloud Data Flow</p>
-						<p>Provides an orchestration service for composable data microservice applications on modern runtimes.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-security.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring Security</p>
-						<p>Protects your application with comprehensive and extensible authentication and authorization support.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/spring-graphql.svg">
-					</div>
-					<div>
-						<p class="name-project">Spring for GraphQL</p>
-						<p>Spring for GraphQL provides support for Spring applications built on GraphQL Java.</p>
-					</div>
-				</div>
-				<div class="child-projects">
-					<div>
-						<img class="icons" src="images/logo-session.png">
-					</div>
-					<div>
-						<p class="name-project">Spring Session</p>
-						<p>Provides an API and implementations for managing a user’s session information.</p>
-					</div>
-				</div>
+			<div class="container-projects" id="cont-prj">
+				
 			</div>
 		</div>
 	</div>

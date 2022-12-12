@@ -156,9 +156,9 @@ li:hover{
 	left: 50%;
 }
 
-.nav-link1:hover + .hidden-menu1, .nav-link2:hover + .hidden-menu2, .nav-link3:hover + .hidden-menu3{
+/* .nav-link1:hover + .hidden-menu1, .nav-link2:hover + .hidden-menu2, .nav-link3:hover + .hidden-menu3{
 	display: block;
-}
+} */
 
 /*styles for first block with information about company*/
 .first-intro{
@@ -181,6 +181,15 @@ li:hover{
 .second-intro{
 	width: 100%;
 	background-color: rgba(235, 242, 242,1);
+}
+
+.search{
+	position: relative;
+	left: 39%;
+	margin-top: 15px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	height: 35px;
 }
 
 .container-second{
@@ -370,6 +379,12 @@ li:hover{
 	overflow-y: scroll;
 }
 
+.forCloseMobMenu{
+	position: relative;
+	left: 95%;
+	padding-right: 15px;
+}
+
 .container-mobile-menu{
 	max-width: 600px;
 	margin-top: 150px;
@@ -386,21 +401,6 @@ li:hover{
 
 .first-mobile-hidden-menu, .second-mobile-hidden-menu, .third-mobile-hidden-menu{
 	display: none;
-	transition: .5s;
-}
-
-.open-hidden-menu1:hover + .first-mobile-hidden-menu{
-	display: block;
-	transition: .5s;
-}
-
-.open-hidden-menu2:hover + .second-mobile-hidden-menu{
-	display: block;
-	transition: .5s;
-}
-
-.open-hidden-menu3:hover + .third-mobile-hidden-menu{
-	display: block;
 	transition: .5s;
 }
 
