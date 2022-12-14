@@ -67,18 +67,17 @@ function setProjects() {
             <p class="name-project">${item.name}</p>
             <p>${item.info}</p>
         </div>
-    </div>`).join();
+    </div>`).join("");
     container.innerHTML = p;
 }
 
-let firstclick = 0;
+let flag;
 function setMenuItems(classname) {
-    const container = document.querySelector(classname);
-
-    if(firstclick % 2 != 0){
-        container.style.display = "none";
+    if(x != null)
+    {
+        document.querySelector(flag).style.display = "none";
     }
-    else{
+    const container = document.querySelector(classname);
         switch (classname) {
             case '.hidden-menu1':
                 container.style.display = "block";
@@ -102,8 +101,7 @@ function setMenuItems(classname) {
                 </ul>`).join("");
                 break;
         }
-    }
-    firstclick++;
+    flag = classname;
 }
 
 function showMobileMenu() {
@@ -159,19 +157,20 @@ function searchProjects() {
         const search = document.querySelector(".search");
         let result = projects.filter(item => item.name.includes(search.value));
         if (result.length == 0) {
-            container.innerHTML = "<h2 style='color: black; font-size: 25px'>No results</h2>";
+            container.innerHTML = "<h2 style='color: black; font-size: 25px;'>No results</h2>";
         }
         else {
-            container.innerHTML = result.map(item => `
-        <div class="child-projects">
-            <div>
-                <img class="icons" src="${item.img}">
-            </div>
-            <div>
-                <p class="name-project">${item.name}</p>
-                <p>${item.info}</p>
-            </div>
-        </div>`).join("");
+            const p = result.map(item => `
+    <div class="child-projects">
+        <div>
+            <img class="icons" src="${item.img}">
+        </div>
+        <div>
+            <p class="name-project">${item.name}</p>
+            <p>${item.info}</p>
+        </div>
+    </div>`).join("");
+    container.innerHTML = p;
         }
     }, 1000);
 
