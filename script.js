@@ -10,19 +10,34 @@ let projects = [
         info: "Provides core support for dependency injection, transaction management, web apps, data access, messaging, and more."
     },
     {
-        img: "images/spring-boot.svg",
-        name: "Spring Boot",
-        info: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible"
+        img: "images/spring-data.svg",
+        name: "Spring Data",
+        info: "Provides a consistent approach to data access – relational, non-relational, map-reduce, and beyond."
     },
     {
-        img: "images/spring-framework.svg",
-        name: "Spring Framework",
-        info: "Provides core support for dependency injection, transaction management, web apps, data access, messaging, and more."
+        img: "images/spring-cloud.svg",
+        name: "Spring Cloud",
+        info: "Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices."
     },
     {
-        img: "images/spring-boot.svg",
-        name: "Spring Boot",
-        info: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible"
+        img: "images/spring-data-flow.svg",
+        name: "Spring Cloud Data",
+        info: "Provides an orchestration service for composable data microservice applications on modern runtimes."
+    },
+    {
+        img: "images/spring-security.svg",
+        name: "Spring Security",
+        info: "Protects your application with comprehensive and extensible authentication and authorization support."
+    },
+    {
+        img: "images/spring-graphql.svg",
+        name: "Spring for GraphQL",
+        info: "Spring for GraphQL provides support for Spring applications built on GraphQL Java."
+    },
+    {
+        img: "images/logo-session.png",
+        name: "Spring Session",
+        info: "Provides an API and implementations for managing a user’s session information."
     }];
 
 let firstMenuItems = [

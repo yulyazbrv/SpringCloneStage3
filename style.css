@@ -184,12 +184,12 @@ li:hover{
 }
 
 .search{
-	position: relative;
-	left: 39%;
 	margin-top: 15px;
 	border: 2px solid grey;
-	border-radius: 5px;
+	border-radius: 2px;
 	height: 35px;
+	width: 40%;
+	margin-left: 33%;
 }
 
 .container-second{
