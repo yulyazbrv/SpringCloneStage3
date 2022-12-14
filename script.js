@@ -71,40 +71,39 @@ function setProjects() {
     container.innerHTML = p;
 }
 
+let firstclick = 0;
 function setMenuItems(classname) {
     const container = document.querySelector(classname);
 
-    const boxmenu = document.createElement("div");
-
-    switch (classname) {
-        case '.nav-link1':
-            boxmenu.className = "hidden-menu1";
-            boxmenu.style.display = "block";
-            boxmenu.innerHTML = firstMenuItems.map(item => `
-            <ul>
-                <li>${item.name}</li>
-            </ul>`).join("");
-            container.append(boxmenu);
-            break;
-        case '.nav-link2':
-            boxmenu.className = "hidden-menu2";
-            boxmenu.style.display = "block";
-            container.append(boxmenu);
-            boxmenu.innerHTML = secondMenuItems.map(item => `
-            <ul>
-                <li>${item.name}</li>
-            </ul>`).join("");
-            break;
-        case '.nav-link3':
-            boxmenu.className = "hidden-menu3";
-            boxmenu.style.display = "block";
-            container.append(boxmenu);
-            boxmenu.innerHTML = thirdMenuItems.map(item => `
-            <ul>
-                <li>${item.name}</li>
-            </ul>`).join("");
-            break;
+    if(firstclick % 2 != 0){
+        container.style.display = "none";
     }
+    else{
+        switch (classname) {
+            case '.hidden-menu1':
+                container.style.display = "block";
+                container.innerHTML = firstMenuItems.map(item => `
+                <ul>
+                    <li>${item.name}</li>
+                </ul>`).join("");
+                break;
+            case '.hidden-menu2':
+                container.style.display = "block";
+                container.innerHTML = secondMenuItems.map(item => `
+                <ul>
+                    <li>${item.name}</li>
+                </ul>`).join("");
+                break;
+            case '.hidden-menu3':
+                container.style.display = "block";
+                container.innerHTML = thirdMenuItems.map(item => `
+                <ul>
+                    <li>${item.name}</li>
+                </ul>`).join("");
+                break;
+        }
+    }
+    firstclick++;
 }
 
 function showMobileMenu() {
@@ -116,6 +115,7 @@ function closeMobileMenu() {
     const menu = document.querySelector(".mobile-menu");
     menu.style.display = "none";
 }
+
 let click = 0;
 function showMobileMenuItems(classname) {
     const menu = document.querySelector(classname);
@@ -148,6 +148,7 @@ function showMobileMenuItems(classname) {
     }
 
     click++;
+    //event.stopPropagation();
 }
 
 let timerId = null

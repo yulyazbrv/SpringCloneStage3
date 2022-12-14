@@ -23,18 +23,18 @@
 			</div>
 			<div class="item-menu">
 				<h1>Learn</h1>
-				<a class="open-hidden-menu2" href="">
+				<div class="open-hidden-menu2">
 					<img class="arrow-icon" onclick="showMobileMenuItems('.second-mobile-hidden-menu')" src="images/arrow-down.png">
-				</a>
+				</div>
 			</div>
 			<div class="second-mobile-hidden-menu">
 				
 			</div>
 			<div class="item-menu">
 				<h1>Projects</h1>
-				<a class="open-hidden-menu3" href="">
+				<div class="open-hidden-menu3">
 					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.third-mobile-hidden-menu')">
-				</a>
+				</div>
 			</div>
 			<div class="third-mobile-hidden-menu">
 				
@@ -67,12 +67,18 @@
 				<img class="icon-adaptive-menu" src="images/menu.png" onclick="showMobileMenu()">
 
 				<nav class="nav">
-					<a class="nav-link1" href="" onclick="setMenuItems('.nav-link1')">Why Spring</a>
-					
-					<a class="nav-link2" href="" onclick="setMenuItems('.nav-link2')">Learn</a>
-					
-					<a class="nav-link3" href="" onclick="setMenuItems('.nav-link3')">Projects</a>
-					
+					<div class="nav-link1" onclick="setMenuItems('.hidden-menu1')">Why Spring</div>
+					<div class="hidden-menu1">
+
+					</div>
+					<div class="nav-link2" onclick="setMenuItems('.hidden-menu2')">Learn</div>
+					<div class="hidden-menu2">
+
+					</div>
+					<div class="nav-link3" onclick="setMenuItems('.hidden-menu3')">Projects</div>
+					<div class="hidden-menu3">
+
+					</div>
 					<a class="nav-link" href="#">Training</a>
 					<a class="nav-link" href="#">Support</a>
 					<a class="nav-link" href="#">Community</a>

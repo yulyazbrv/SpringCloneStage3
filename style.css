@@ -156,9 +156,9 @@ li:hover{
 	left: 50%;
 }
 
-/* .nav-link1:hover + .hidden-menu1, .nav-link2:hover + .hidden-menu2, .nav-link3:hover + .hidden-menu3{
-	display: block;
-} */
+.nav-link1:hover , .nav-link2:hover , .nav-link3:hover {
+	cursor: pointer;
+}
 
 /*styles for first block with information about company*/
 .first-intro{
