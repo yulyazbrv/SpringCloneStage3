@@ -88,7 +88,7 @@ function setProjects() {
 
 let flag;
 function setMenuItems(classname) {
-    if(x != null)
+    if(flag != null)
     {
         document.querySelector(flag).style.display = "none";
     }
@@ -117,6 +117,10 @@ function setMenuItems(classname) {
                 break;
         }
     flag = classname;
+}
+
+function closeMenuItem(flag){
+    document.querySelector(flag).style.display = "none";
 }
 
 function showMobileMenu() {
