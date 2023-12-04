@@ -6,6 +6,7 @@ html {
 
 p {
   font-family: Metropolis, sans-serif;
+	line-height: 1.4;
 }
 
 h1 {
@@ -100,7 +101,8 @@ li:hover {
   width: 70%;
   margin-left: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  max-width: 600px;
 }
 
 .nav-link {
@@ -113,12 +115,14 @@ li:hover {
 
 .nav-link1,
 .nav-link2,
-.nav-link3 {
+.nav-link3,
+.nav-link {
   font-family: Metropolis, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 600;
   text-decoration: none;
   font-size: 100%;
+  margin-right: 30px;
 }
 
 /* .nav-link1::after {
@@ -131,7 +135,7 @@ li:hover {
   height: 43px;
 } */
 
-.nav-link1:hover ~ .hidden-menu1{
+.nav-link1:hover ~ .hidden-menu1 {
   display: block;
 }
 
@@ -200,7 +204,7 @@ li:hover {
 
 .container-second {
   display: flex;
-  max-width: 1140px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px solid black;
@@ -215,12 +219,14 @@ li:hover {
 .container-projects {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0px 10px;
 }
 
 .child-projects {
+  display: flex;
+  align-items: self-start;
   background-color: white;
   width: 40%;
   padding: 25px 20px 40px 20px;
@@ -242,7 +248,9 @@ li:hover {
 }
 
 .icons {
-  height: 80%;
+  min-height: 60px;
+  min-width: 60px;
+  padding-top: 24px;
 }
 
 /*third block - attic*/
