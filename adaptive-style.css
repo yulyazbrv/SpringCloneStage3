@@ -1,74 +1,74 @@
 @media (min-width: 800px) and (max-width: 1000px) {
-	.left-step-second-inro{
-		display: none;
-	}
+  .left-step-second-inro {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
-	.left-step-second-inro{
-		width: 5%;
-	}
+  .left-step-second-inro {
+    width: 5%;
+  }
 
-	.container-projects{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: stretch;
-	}
+  .container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	.child-projects{
-		width: 90%;
-	}
+  .child-projects {
+    width: 90%;
+  }
 
-	.nav{
-		display: none;
-	}
+  .nav {
+    display: none;
+  }
 
-	.under-intro{
-		display: none;
-	}
+  .under-intro {
+    display: none;
+  }
 
-	.header{
-		position: fixed;
-		top: 0;
-		z-index: 10;
-		background-color: white;
-	}
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+  }
 
-	.header-inner{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	.icon-adaptive-menu{
-		display: block;
-		height: 30px;
-		width: 30px;
-		margin-right: 10px;
-	}
+  .icon-adaptive-menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
 
-	.first-intro-title{
-		font-size: 40px;
-		margin-bottom: 0;
-		margin-top: 100px;
-	}
+  .first-intro-title {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 100px;
+  }
 
-	.first-intro-about{
-		font-size: 20px;
-		margin-bottom: 70px;
-	}
+  .first-intro-about {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
 
-	.container-footer{
-		flex-direction: column;
-		align-items: space-between;
-	}
+  .container-footer {
+    flex-direction: column;
+    align-items: space-between;
+  }
 
-	.container-list{
-		width: 85%;
-	}
+  .container-list {
+    width: 85%;
+  }
 
-	.container-sumbition{
-		width: 85%;
-	}
+  .container-sumbition {
+    width: 85%;
+  }
 }

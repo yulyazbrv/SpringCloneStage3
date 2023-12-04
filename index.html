@@ -8,7 +8,7 @@
 	<script src="script.js"></script>
 	<title>Spring</title>
 </head>
-<body onload="setProjects()">
+<body>
 	<nav class="mobile-menu">
 		<div class="forCloseMobMenu" onclick="closeMobileMenu()"><h1 style="font-size: 30px;">x</h1></div>
 		<div class="container-mobile-menu">
@@ -64,21 +64,90 @@
 
 				<img class="main-logo" src="images/spring-logo.svg">
 
-				<img class="icon-adaptive-menu" src="images/menu.png" onclick="showMobileMenu()">
+				<img class="icon-adaptive-menu" src="images/menu.png">
 
 				<nav class="nav">
-					<div class="nav-link1" onmouseover="setMenuItems('.hidden-menu1')">Why Spring</div>
-					<div class="hidden-menu1" id="hidmen1" onmouseleave="closeMenuItem('.hidden-menu1')">
-
-					</div>
-					<div class="nav-link2" onmouseover="setMenuItems('.hidden-menu2')">Learn</div>
-					<div class="hidden-menu2" id="hidmen2" onmouseleave="closeMenuItem('.hidden-menu2')">
-
-					</div>
-					<div class="nav-link3" onmouseover="setMenuItems('.hidden-menu3')">Projects</div>
-					<div class="hidden-menu3" id="hidmen3" onmouseleave="closeMenuItem('.hidden-menu3')">
-
-					</div>
+						<div class="nav-link1" >Why Spring</div>
+						<div class="hidden-menu1" id="hidmen1" >
+							<ul>
+								<li>Overview</li>
+							</ul>
+							<ul>
+								<li>Microservices</li>
+							</ul>
+							<ul>
+								<li>Reactive</li>
+							</ul>
+							<ul>
+								<li>Event Driven</li>
+							</ul>
+							<ul>
+								<li>Cloud</li>
+							</ul>
+							<ul>
+								<li>Web Applications</li>
+							</ul>
+							<ul>
+								<li>Serverless</li>
+							</ul>
+							<ul>
+								<li>Batch</li>
+							</ul>
+						</div>
+					<div class="nav-link2">Learn</div>
+						<div class="hidden-menu2" id="hidmen2">
+							<ul>
+								<li>Overview</li>
+							</ul>
+							<ul>
+								<li>Microservices</li>
+							</ul>
+							<ul>
+								<li>Reactive</li>
+							</ul>
+							<ul>
+								<li>Event Driven</li>
+							</ul>
+							<ul>
+								<li>Cloud</li>
+							</ul>
+							<ul>
+								<li>Web Applications</li>
+							</ul>
+							<ul>
+								<li>Serverless</li>
+							</ul>
+							<ul>
+								<li>Batch</li>
+							</ul>
+						</div>
+					<div class="nav-link3">Projects</div>
+						<div class="hidden-menu3" id="hidmen3">
+							<ul>
+								<li>Overview</li>
+							</ul>
+							<ul>
+								<li>Microservices</li>
+							</ul>
+							<ul>
+								<li>Reactive</li>
+							</ul>
+							<ul>
+								<li>Event Driven</li>
+							</ul>
+							<ul>
+								<li>Cloud</li>
+							</ul>
+							<ul>
+								<li>Web Applications</li>
+							</ul>
+							<ul>
+								<li>Serverless</li>
+							</ul>
+							<ul>
+								<li>Batch</li>
+							</ul>
+						</div>
 					<a class="nav-link" href="#">Training</a>
 					<a class="nav-link" href="#">Support</a>
 					<a class="nav-link" href="#">Community</a>
@@ -97,14 +166,81 @@
 	</div>
 
 	<div class="second-intro">
-		<div>
-			<input class="search" type="search" placeholder="SEARCH" name="q" onkeyup="searchProjects()">
-		</div>
 		<div class="container-second">		
-			<div class="left-step-second-inro"></div>	
-			<div class="container-projects" id="cont-prj">
-				
-			</div>
+				<div class="container-projects" id="cont-prj">
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-boot.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Boot</p>
+									<p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-framework.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Framework</p>
+									<p>Provides core support for dependency injection, transaction management, web apps, data access, messaging, and more.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-data.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Data</p>
+									<p>Provides a consistent approach to data access – relational, non-relational, map-reduce, and beyond.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-cloud.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Cloud</p>
+									<p>Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-data-flow.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Cloud Data</p>
+									<p>Provides an orchestration service for composable data microservice applications on modern runtimes.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-security.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Security</p>
+									<p>Protects your application with comprehensive and extensible authentication and authorization support.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-graphql.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring for GraphQL</p>
+									<p>Spring for GraphQL provides support for Spring applications built on GraphQL Java.</p>
+							</div>
+						</div>
+						<div class="child-projects">
+							<div>
+									<img class="icons" src="images/spring-data.svg">
+							</div>
+							<div class="project-content">
+									<p class="name-project">Spring Session</p>
+									<p>Provides an API and implementations for managing a user’s session information.</p>
+							</div>
+						</div>
+				</div>
 		</div>
 	</div>
 
