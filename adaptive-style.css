@@ -1,14 +1,4 @@
-@media (min-width: 800px) and (max-width: 1000px) {
-  .left-step-second-inro {
-    display: none;
-  }
-}
-
 @media (max-width: 800px) {
-  .left-step-second-inro {
-    width: 5%;
-  }
-
   .container-projects {
     display: flex;
     flex-direction: column;

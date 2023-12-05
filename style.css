@@ -11,14 +11,14 @@ html {
 
 p {
   font-family: "Metropolis", sans-serif;
-	text-decoration-color: black;
+  text-decoration-color: black;
   line-height: 1.4;
 }
 
 span {
-	font-family: "Metropolis", sans-serif;
-	font-weight: bold;
-	text-decoration-color: black;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  text-decoration-color: black;
 }
 
 h1 {
@@ -228,7 +228,8 @@ li:hover {
 
 .name-project {
   font-size: 24px;
-  color: #086dc3;
+	font-weight: bold;
+  color: black;
 }
 
 .icons {
@@ -300,7 +301,7 @@ li:hover {
 
 .child-gets {
   width: 70%;
-	margin-right: 50px;
+  margin-right: 50px;
 }
 
 .get-news {
