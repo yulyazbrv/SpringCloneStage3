@@ -4,9 +4,21 @@ html {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Metropolis";
+  src: url("fonts/metropolis-regular.ttf") format("truetype");
+}
+
 p {
-  font-family: Open Sans, sans-serif;
+  font-family: "Metropolis", sans-serif;
+	text-decoration-color: black;
   line-height: 1.4;
+}
+
+span {
+	font-family: "Metropolis", sans-serif;
+	font-weight: bold;
+	text-decoration-color: black;
 }
 
 h1 {
@@ -29,7 +41,7 @@ ul {
   padding: 0;
   font-family: Open Sans, sans-serif;
   color: #191e1e;
-	font-weight: 200;
+  font-weight: 200;
 }
 
 li {
@@ -43,7 +55,6 @@ li:hover {
   color: #6db33f;
   transition: 0.3s;
 }
-
 
 /*styles for header */
 .header {
@@ -98,7 +109,7 @@ li:hover {
   margin-right: 20px;
   display: flex;
   align-items: center;
-	position: relative;
+  position: relative;
 }
 
 .arrow-icon {
@@ -109,7 +120,7 @@ li:hover {
 
 .nav-link1:hover .hidden-menu1,
 .hidden-menu1:hover,
-.nav-link2:hover  .hidden-menu2,
+.nav-link2:hover .hidden-menu2,
 .hidden-menu2:hover,
 .nav-link3:hover .hidden-menu3,
 .hidden-menu3:hover,
@@ -135,9 +146,10 @@ li:hover {
   box-shadow: 0px 5px 30px 0px rgba(108, 135, 135, 0.5);
   padding: 10px 50px 10px 30px;
   top: 47px;
-	left: -20px;
+  left: -20px;
   z-index: 3;
   display: none;
+  width: max-content;
 }
 
 .nav-link1:hover,
@@ -176,7 +188,7 @@ li:hover {
 
 .container-second {
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding-top: 20px;
@@ -199,7 +211,7 @@ li:hover {
   display: flex;
   align-items: self-start;
   background-color: white;
-  width: 40%;
+  width: 42%;
   padding: 20px 20px 20px 20px;
   display: flex;
   margin: 10px 0px 10px 0px;
@@ -258,7 +270,7 @@ li:hover {
 }
 
 .child-spec-projects {
-  max-width: 40%;
+  max-width: 38%;
 }
 
 /*fourth block*/
@@ -287,12 +299,13 @@ li:hover {
 }
 
 .child-gets {
-  width: 35%;
+  width: 70%;
+	margin-right: 50px;
 }
 
 .get-news {
   font-size: 24px;
-  font-weight: 550;
+  font-weight: bold;
 }
 
 .circle-banner {
@@ -340,7 +353,7 @@ li:hover {
 }
 
 .footer-h2 {
-  font-weight: 550;
+  font-weight: bold;
   font-size: 115%;
   transition: 0.3s;
   cursor: pointer;
@@ -416,4 +429,3 @@ li:hover {
   display: none;
   transition: 0.5s;
 }
-
