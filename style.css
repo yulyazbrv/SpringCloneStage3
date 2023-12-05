@@ -29,6 +29,7 @@ ul {
   padding: 0;
   font-family: Open Sans, sans-serif;
   color: #191e1e;
+	font-weight: 200;
 }
 
 li {
@@ -43,29 +44,6 @@ li:hover {
   transition: 0.3s;
 }
 
-/*bloch under header*/
-.under-intro {
-  margin: 0;
-  width: 100%;
-  background-color: #6db33f;
-  height: 35px;
-}
-
-.welcome-text {
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 6px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.welcome-text:hover {
-  color: rgba(255, 255, 255, 1);
-  transition: 0.3s;
-}
 
 /*styles for header */
 .header {
@@ -106,14 +84,6 @@ li:hover {
   height: 48px;
 }
 
-.nav-link {
-  font-family: Metropolis, sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 100%;
-}
-
 .nav-link1,
 .nav-link2,
 .nav-link3,
@@ -128,7 +98,7 @@ li:hover {
   margin-right: 20px;
   display: flex;
   align-items: center;
-  position: relative;
+	position: relative;
 }
 
 .arrow-icon {
@@ -137,17 +107,17 @@ li:hover {
   margin-left: 5px;
 }
 
-.nav-link1:hover + .hidden-menu1,
+.nav-link1:hover .hidden-menu1,
 .hidden-menu1:hover,
-.nav-link2:hover + .hidden-menu2,
+.nav-link2:hover  .hidden-menu2,
 .hidden-menu2:hover,
-.nav-link3:hover + .hidden-menu3,
+.nav-link3:hover .hidden-menu3,
 .hidden-menu3:hover,
-.nav-link4:hover + .hidden-menu4,
+.nav-link4:hover .hidden-menu4,
 .hidden-menu4:hover,
-.nav-link5:hover + .hidden-menu5,
+.nav-link5:hover .hidden-menu5,
 .hidden-menu5:hover,
-.nav-link6:hover + .hidden-menu6,
+.nav-link6:hover .hidden-menu6,
 .hidden-menu6:hover {
   display: block;
 }
@@ -164,32 +134,10 @@ li:hover {
   background-color: white;
   box-shadow: 0px 5px 30px 0px rgba(108, 135, 135, 0.5);
   padding: 10px 50px 10px 30px;
-  top: 101%;
+  top: 47px;
+	left: -20px;
   z-index: 3;
   display: none;
-}
-
-.hidden-menu1 {
-  left: 41%;
-}
-
-.hidden-menu2 {
-  left: 47%;
-}
-
-.hidden-menu3 {
-  left: 49%;
-}
-.hidden-menu4 {
-  left: 61%;
-}
-
-.hidden-menu5 {
-  left: 65%;
-}
-
-.hidden-menu6 {
-  left: 74%;
 }
 
 .nav-link1:hover,
@@ -468,3 +416,4 @@ li:hover {
   display: none;
   transition: 0.5s;
 }
+
