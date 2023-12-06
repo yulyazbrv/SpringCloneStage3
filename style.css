@@ -130,7 +130,9 @@ li:hover {
 .hidden-menu5:hover,
 .nav-link6:hover .hidden-menu6,
 .hidden-menu6:hover {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s;
 }
 
 .hidden-menu1,
@@ -148,7 +150,9 @@ li:hover {
   top: 47px;
   left: -20px;
   z-index: 3;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
   width: max-content;
 }
 
