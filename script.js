@@ -1,4 +1,4 @@
-let projects = [
+const projects = [
   {
     img: "images/spring-boot.svg",
     name: "Spring Boot",
@@ -91,7 +91,7 @@ let projects = [
   },
 ];
 
-let firstMenuItems = [
+const firstMenuItems = [
   { name: "Overview" },
   { name: "Microservices" },
   { name: "Reactive" },
@@ -102,14 +102,14 @@ let firstMenuItems = [
   { name: "Batch" },
 ];
 
-let secondMenuItems = [
+const secondMenuItems = [
   { name: "Overview" },
   { name: "Quickstart" },
   { name: "Guides" },
   { name: "Blog" },
 ];
 
-let thirdMenuItems = [
+const thirdMenuItems = [
   { name: "Overview" },
   { name: "Spring Boot" },
   { name: "Spring Framework" },
@@ -126,9 +126,9 @@ let thirdMenuItems = [
   { name: "Spring Initializr" },
 ];
 
-let fourthMenuItems = [{ name: "Courses" }, { name: "Get Certified" }];
+const fourthMenuItems = [{ name: "Courses" }, { name: "Get Certified" }];
 
-let fifthMenuItems = [
+const fifthMenuItems = [
   { name: "Overview" },
   { name: "Spring Runtime" },
   { name: "Spring Consulting" },
@@ -136,16 +136,27 @@ let fifthMenuItems = [
   { name: "Security Advisories" },
 ];
 
-let sixthMenuItems = [
+const sixthMenuItems = [
   { name: "Overview" },
   { name: "Events" },
   { name: "Team" },
 ];
 
+const menuItems = {
+  ".hidden-menu1": firstMenuItems,
+  ".hidden-menu2": secondMenuItems,
+  ".hidden-menu3": thirdMenuItems,
+  ".hidden-menu4": fourthMenuItems,
+  ".hidden-menu5": fifthMenuItems,
+  ".hidden-menu6": sixthMenuItems,
+};
+
 function setProjects() {
   const container = document.getElementById("cont-prj");
 
-  const project = projects.map(item => `
+  const project = projects
+    .map(
+      (item) => `
   <div class="child-projects">
       <div>
           <img class="icons" src="${item.img}">
@@ -154,6 +165,29 @@ function setProjects() {
           <p class="name-project">${item.name}</p>
           <p>${item.info}</p>
       </div>
-  </div>`).join("");
+  </div>`
+    )
+    .join("");
   container.innerHTML = project;
+}
+
+let activeMenu = null;
+
+function setMenuItems(classname) {
+  if (activeMenu !== null) {
+    document.querySelector(activeMenu).style.display = "none";
+  }
+
+  const container = document.querySelector(classname);
+  container.style.display = "block";
+  container.innerHTML = getMenuItemsHTML(classname);
+
+  activeMenu = classname;
+}
+
+function getMenuItemsHTML(classname) {
+  const itemsHTML = menuItems[classname]
+    .map((item) => `<li>${item.name}</li>`)
+    .join("");
+  return `<ul>${itemsHTML}</ul>`;
 }
