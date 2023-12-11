@@ -54,11 +54,12 @@
 
   .container-footer {
     flex-direction: column;
+    align-items: center;
     align-items: space-between;
   }
 
   .container-list {
-    width: 85%;
+    width: 100%;
   }
 
   .container-sumbition {

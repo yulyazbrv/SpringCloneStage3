@@ -358,7 +358,9 @@ li:hover {
   width: 50%;
   justify-content: space-between;
 }
-
+.list-item {
+  margin-right: 10px;
+}
 .footer-h2 {
   font-weight: bold;
   font-size: 115%;
