@@ -7,14 +7,78 @@
 	<link rel="stylesheet" type="text/css" href="adaptive-style.css">
 	<link rel="shortcut icon" href="images/spring.svg" />
 	<script src="script.js"></script>
+	<script src="data.js"></script>
 	<title>Spring</title>
 </head>
 <body onload="setProjects()">
+	<nav class="mobile-menu">
+		<div class="sumbol-close" onclick="closeMobileMenu()"><h1>x</h1></div>
+		<div class="container-mobile-menu">
+			<div class="item-menu">
+				<h1 class="menu-title">Why Spring</h1>
+				<div>
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.first-mobile-hidden-menu')">
+				</div>
+			</div>
+			<div class="first-mobile-hidden-menu">
+				
+			</div>
+			<div class="item-menu">
+				<h1 class="menu-title">Learn</h1>
+				<div>
+					<img class="arrow-icon" onclick="showMobileMenuItems('.second-mobile-hidden-menu')" src="images/arrow-down.png">
+				</div>
+			</div>
+			<div class="second-mobile-hidden-menu">
+				
+			</div>
+			<div class="item-menu">
+				<h1 class="menu-title">Projects</h1>
+				<div>
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.third-mobile-hidden-menu')">
+				</div>
+			</div>
+			<div class="third-mobile-hidden-menu">
+				
+			</div>
+
+			<div class="item-menu">
+				<h1 class="menu-title">Training</h1>
+				<div>
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.fourth-mobile-hidden-menu')">
+				</div>
+			</div>
+			<div class="fourth-mobile-hidden-menu">
+				
+			</div>
+
+			<div class="item-menu">
+				<h1 class="menu-title">Support</h1>
+				<div>
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.fifth-mobile-hidden-menu')">
+				</div>
+			</div>
+			<div class="fifth-mobile-hidden-menu">
+				
+			</div>
+			
+			<div class="item-menu">
+				<h1 class="menu-title">Community</h1>
+				<div>
+					<img class="arrow-icon" src="images/arrow-down.png" onclick="showMobileMenuItems('.sixth-mobile-hidden-menu')">
+				</div>
+			</div>
+			<div class="sixth-mobile-hidden-menu">
+				
+			</div>
+		</div>
+	</nav>
+
 	<header class="header">
 		<div class="container">
 			<div class="header-inner">
 				<img class="main-logo" src="images/spring-logo.svg">
-				<img class="icon-adaptive-menu" src="images/menu.png">
+				<img class="icon-adaptive-menu" src="images/menu.png" onclick="showMobileMenu()">
 				<nav class="nav">
 						<div class="nav-link1" onmouseover="setMenuItems('.hidden-menu1')">
 							<div class="hidden-menu1" id="hidmen1" >

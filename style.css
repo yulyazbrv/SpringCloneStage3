@@ -85,6 +85,8 @@ li:hover {
 
 .icon-adaptive-menu {
   display: none;
+  margin-right: 0 !important;
+  cursor: pointer;
 }
 
 .nav {
@@ -398,7 +400,7 @@ li:hover {
 /*for mobile version menu(not use)*/
 .mobile-menu {
   display: none;
-  background-color: black;
+  background-color: #191e1e;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -406,19 +408,25 @@ li:hover {
   z-index: 11;
   max-width: 100%;
   overflow-y: scroll;
+  animation: slideDown 0.3s ease-out;
 }
 
-.forCloseMobMenu {
+.sumbol-close {
   position: relative;
   left: 95%;
   padding-right: 15px;
+  cursor: pointer;
+}
+
+.sumbol-close > h1 {
+  font-size: 30px;
+  font-weight: 100;
+  font-size: 25px;
 }
 
 .container-mobile-menu {
-  max-width: 600px;
-  margin-top: 150px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: auto;
+  margin: 80px 20px;
 }
 
 .item-menu {
@@ -428,9 +436,33 @@ li:hover {
   align-items: center;
 }
 
+.menu-title {
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.menu-title:hover {
+  color: #6db33f;
+  transition: 0.2s;
+}
+
 .first-mobile-hidden-menu,
 .second-mobile-hidden-menu,
-.third-mobile-hidden-menu {
+.third-mobile-hidden-menu,
+.fourth-mobile-hidden-menu,
+.fifth-mobile-hidden-menu,
+.sixth-mobile-hidden-menu {
   display: none;
   transition: 0.5s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
