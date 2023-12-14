@@ -71,3 +71,33 @@ function showMobileMenuItems(classname) {
 
   click++;
 }
+
+let timerId = null;
+function searchProjects() {
+  clearTimeout(timerId);
+  timerId = setTimeout(function () {
+    const container = document.getElementById("cont-prj");
+    const search = document.querySelector(".search");
+    let result = projects.filter((item) => item.name.includes(search.value));
+    if (result.length == 0) {
+      container.innerHTML =
+        "<h2 style='color: black; font-size: 25px;'>No results</h2>";
+    } else {
+      const p = result
+        .map(
+          (item) => `
+            <div class="child-projects">
+                <div>
+                    <img class="icons" src="${item.img}">
+                </div>
+                <div>
+                    <p class="name-project">${item.name}</p>
+                    <p>${item.info}</p>
+                </div>
+            </div>`
+        )
+        .join("");
+      container.innerHTML = p;
+    }
+  }, 300);
+}

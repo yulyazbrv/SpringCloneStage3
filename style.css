@@ -187,6 +187,66 @@ li:hover {
 }
 
 /*second block - main projects*/
+
+form {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+form:hover {
+  width: 200px;
+  cursor: pointer;
+}
+
+form:hover input {
+  display: block;
+}
+
+form:hover .fa {
+  background: #6db33f;
+  color: white;
+}
+
 .second-intro {
   width: 100%;
   background-color: rgba(235, 242, 242, 1);
@@ -194,10 +254,10 @@ li:hover {
 
 .container-second {
   display: flex;
+  flex-direction: column;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
   padding-bottom: 40px;
 }
 
