@@ -4,15 +4,15 @@ function setProjects() {
   const project = projects
     .map(
       (item) => `
-  <div class="child-projects">
-      <div>
-          <img class="icons" src="${item.img}">
-      </div>
-      <div class="project-content">
-          <p class="name-project">${item.name}</p>
-          <p>${item.info}</p>
-      </div>
-  </div>`
+        <div class="child-projects">
+            <div>
+                <img class="icons" src="${item.img}">
+            </div>
+            <div class="project-content">
+                <p class="name-project">${item.name}</p>
+                <p>${item.info}</p>
+            </div>
+        </div>`
     )
     .join("");
   container.innerHTML = project;
